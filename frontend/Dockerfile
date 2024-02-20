@@ -6,3 +6,6 @@ WORKDIR /frontend
 
 RUN apt-get update \
   && apt-get install -y
+
+CMD ["cd","app"]
+CMD ["npm","run","dev"]
