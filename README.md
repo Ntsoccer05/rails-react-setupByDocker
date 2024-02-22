@@ -3,6 +3,22 @@
 参照元：<br>
 <a>https://zenn.dev/dsakai07/articles/84ceb379cffbcb</a><br>
 
+.envファイルをプロジェクト直下に作成し、内容を以下のようにする（サンプル）<br>
+<pre>
+    # ポート番号
+    APP_PORT=3333
+    DB_PORT=5555
+    FRONT_PORT=3001
+    POSTGRES_PORT=8000
+
+    # 内容
+    DB_USER=postgres
+    DB_EMAIL=email@email.com
+    DB_PASSWORD=admin
+    DB_HOSTNAME=db
+</pre>
+
+
 docker-compose run --no-deps api rails new . --force --database=postgresql --api<br>
 上記をする前に<br>
 docker compose build<br>
